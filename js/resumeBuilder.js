@@ -2,46 +2,6 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 
-// $("#main").append("Jennifer Sánchez Dueñas");
-
-var firstName = "Jennifer Sánchez Dueñas";
-
-var awesomeThoughts = "I am Jennifer Sánchez Dueñas and I am AWESOME!";
-
-var funThoughts = 
-	awesomeThoughts.replace("AWESOME", "FUN");
-
-//console.log(funThoughts);
-
-// $("#main").append(funThoughts);
-
-
-// [string].replace([old],[new])
-// Remplazar una cadena de texto por otra
-
-// variabledondeestaeldato.replace("vieja cadena", "nueva cadena");
-
-var email = "jennifer@sanchezdueñas.com";
-
-var newEmail = 
-	email.replace("sanchezdueñas", "gmail");
-
-/************ EJEMPLO REPLACE **************/
-
-/*
-
-var str = 'Twas the night before Xmas...';
-var newstr = 
-	str.replace(/xmas/i, 'Christmas');
-
-// Twas the night before Christmas...  console.log(newstr);
-
-*/
-
-
-/************ EJEMPLO DATOS CV **************/
-
-
 var name = "Jennifer Sánchez";
 var role = "Designer";
 
@@ -60,20 +20,89 @@ $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 
 
-/************ STRING MAIPULACION QUIZ 1 **************/
+var bio = {
+	"name" : "Jennifer",
+	"role" : "Designer",
+	"contacts" : {
+		"mobile" : "699323200",
+		"email" : "jennifersduenas@gmail.com",
+		"github" : "jennifersd",
+		"twitter" : "@jennifersd",
+		"location" : "Spain"
+	},
+	"welcomeMessage" : "Hello!",
+	"skills" : [
+		"developers" , "designer", "JS"
+	],
+	"bioPic" : "images/fry.jpg"
+}
 
-var s = "audacity";
+var education = {
+	"schools" : [
+		{
+			"name" : "Trazos",
+			"city" : "Madrid",
+			"degree" : "Master",
+			"language" : ["English", "Spanish"]
+		},
+		{
+			"name" : "Trazos",
+			"city" : "Madrid",
+			"degree" : "Master",
+			"language" : ["English"]
+		}
+	],
 
-var udacityizer = function(s) {  
-    // Right now, the variable s === "audacity"
-    // Manipulate s to make it equal to "Udacity"
-    // Your code goes here!
-    s = s[1].toUpperCase() + s.slice(2);
-    return s;
-};
+	"onlineCourses" : [
+		{
+			"title" : "JavaScript",
+			"school" : "Udacity"
+		},
+		{
+			"title" : "JavaScript",
+			"school" : "Udacity"
+		}
+	]
+}
 
-// Did your code work? The line below will tell you!
-//console.log(udacityizer(s));
+
+var work = {
+	"jobs" : [
+		{
+			"employer" : "ISP",
+			"title" : "Designer",
+			"dates" : "January - 2000",
+			"description" : "Lorem ipsum. lorem lorem"
+		},
+		{
+			"employer" : "ISSW",
+			"title" : "Web Designer",
+			"dates" : "2000 - Future",
+			"description" : "Lorem ipsum. lorem lorem"
+		}
+	]
+}
+
+var projects = {
+	"projects" : [
+		{
+			"title" : "Sample Project 1",
+			"dates" : "January - 2000",
+			"description" : "Lorem ipsum. lorem lorem"
+		},
+		{
+			"title" : "Sample Project 2",
+			"dates" : "2000 - Future",
+			"description" : "Lorem ipsum. lorem lorem"
+		}
+	]
+}
+
+
+
+
+
+
 
 
 
